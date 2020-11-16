@@ -3,15 +3,15 @@
   <i>-You</i>
 </div>
 <div class="answer_box">
-  <p>
-    <% if params[:question].downcase == "i am going to work" %>
+  <p> <%= @result %> </p>
+<!--     <% if params[:question].downcase == "i am going to work" %>
     <%= "Great!" %>
     <% elsif params[:question].end_with?("?") %>
     <%= "Silly question, get dressed and go to work!" %>
     <% else %>
     <%= "I don't care, get dressed and go to work!" %>
-    <% end %>
-  </p>
+    <% end %> -->
+<!--   </p> -->
   <i>-Your coach</i>
 </div>
 <%= link_to 'Ask a new question', ask_path %>
